@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rent_root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+           prefHeight="600.0" prefWidth="1040.0" style="-fx-background-color: #fafafa;"
+           xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="source.RentController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0"
+              prefWidth="384.0" StackPane.alignment="TOP_LEFT">
+            <children>
+                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="55.0" prefWidth="384.0">
+                    <VBox.margin>
+                        <Insets top="16.0"/>
+                    </VBox.margin>
+                    <children>
+                        <Label fx:id="district_label" alignment="CENTER_RIGHT" maxHeight="-Infinity"
+                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0"
+                               prefWidth="104.0" text="Label" textFill="#0000008a">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <VBox fx:id="district_vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="30.0" prefWidth="168.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="264.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="district_hint" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0"
+                                               prefWidth="256.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="264.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="16.0" top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="55.0" prefWidth="384.0">
+                    <children>
+                        <Label fx:id="area_label" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="104.0"
+                               text="Label" textFill="#0000008a">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <VBox fx:id="area_vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="30.0" prefWidth="168.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="264.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="area_hint" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0"
+                                               prefWidth="256.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="264.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="16.0" top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="16.0"/>
+                    </VBox.margin>
+                </HBox>
+
+                <HBox layoutX="10.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="55.0" prefWidth="384.0">
+                    <children>
+                        <Label fx:id="type_label" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="104.0"
+                               text="Label" textFill="#0000008a">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <VBox fx:id="type_vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="30.0" prefWidth="264.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="264.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="type_hint" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0"
+                                               prefWidth="256.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="264.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="16.0" top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="16.0"/>
+                    </VBox.margin>
+                </HBox>
+                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="80.0" prefWidth="384.0">
+                    <children>
+                        <Label fx:id="bedroom_label" alignment="CENTER_RIGHT" maxHeight="-Infinity"
+                               maxWidth="-Infinity" minHeight="-Infinity"
+                               minWidth="-Infinity" prefHeight="80.0" prefWidth="104.0" text="Label"
+                               textFill="#0000008a">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <JFXSlider fx:id="bedroom_slider" blockIncrement="1.0" majorTickUnit="1.0" min="1.0" max="5.0"
+                                   maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" minorTickCount="0"
+                                   prefHeight="120.0" prefWidth="264.0" showTickLabels="true" showTickMarks="true"
+                                   snapToTicks="true" stylesheets="@../css/slider.css" value="3.0">
+                            <HBox.margin>
+                                <Insets left="16.0"/>
+                            </HBox.margin>
+                        </JFXSlider>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="16.0"/>
+                    </VBox.margin>
+                </HBox>
+            </children>
+            <StackPane.margin>
+                <Insets left="16.0" right="16.0" top="44.0"/>
+            </StackPane.margin>
+        </VBox>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0"
+              prefWidth="556.0" StackPane.alignment="TOP_RIGHT">
+            <children>
+                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="55.0" prefWidth="556.0">
+                    <children>
+                        <Label fx:id="price_label" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="192.0"
+                               text="Label" textFill="#0000008a">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <VBox fx:id="price_low_vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="30.0" prefWidth="161.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="161.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="price_low_hint" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0"
+                                               prefWidth="153.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="161.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="16.0" top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                               minWidth="-Infinity" prefHeight="80.0" prefWidth="28.0" text="-"/>
+                        <VBox fx:id="price_high_vbox" layoutX="146.0" layoutY="35.0" maxHeight="-Infinity"
+                              maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                              prefWidth="161.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="161.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="price_high_hint" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0"
+                                               prefWidth="153.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="161.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="16.0"/>
+                    </VBox.margin>
+                </HBox>
+
+                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="55.0" prefWidth="556.0">
+                    <children>
+                        <Label fx:id="salable_area_label" alignment="CENTER_RIGHT" maxHeight="-Infinity"
+                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0"
+                               prefWidth="192.0" text="Label" textFill="#0000008a">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <VBox fx:id="salable_area_low_vbox" maxHeight="-Infinity" maxWidth="-Infinity"
+                              minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="161.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="161.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="salable_area_low_hint" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0"
+                                               prefWidth="153.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="161.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="16.0" top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                               minWidth="-Infinity" prefHeight="80.0" prefWidth="28.0" text="-"/>
+                        <VBox fx:id="salable_area_high_vbox" layoutX="146.0" layoutY="35.0" maxHeight="-Infinity"
+                              maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                              prefWidth="161.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="161.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="salable_area_high_hint" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0"
+                                               prefWidth="153.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="161.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="16.0"/>
+                    </VBox.margin>
+                </HBox>
+
+                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="55.0" prefWidth="556.0">
+                    <children>
+                        <Label fx:id="construction_area_label" alignment="CENTER_RIGHT" maxHeight="-Infinity"
+                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0"
+                               prefWidth="192.0" text="Label" textFill="#0000008a">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <VBox fx:id="construction_area_low_vbox" maxHeight="-Infinity" maxWidth="-Infinity"
+                              minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="161.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="161.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="construction_area_low_hint" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefHeight="29.0" prefWidth="153.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="161.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="16.0" top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                               minWidth="-Infinity" prefHeight="80.0" prefWidth="28.0" text="-"/>
+                        <VBox fx:id="construction_area_high_vbox" layoutX="146.0" layoutY="35.0" maxHeight="-Infinity"
+                              maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                              prefWidth="161.0">
+                            <children>
+                                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" prefHeight="29.0" prefWidth="161.0">
+                                    <children>
+                                        <ImageView fitHeight="29.0" fitWidth="29.0" opacity="0.87" pickOnBounds="true"
+                                                   preserveRatio="true" StackPane.alignment="CENTER_RIGHT">
+                                            <image>
+                                                <Image url="@../image/arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Label fx:id="construction_area_high_hint" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefHeight="29.0" prefWidth="153.0" text="Label">
+                                            <StackPane.margin>
+                                                <Insets left="8.0"/>
+                                            </StackPane.margin>
+                                        </Label>
+                                    </children>
+                                </StackPane>
+                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="1.0" prefWidth="161.0"
+                                      style="-fx-background-color: #0000001f;"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets top="25.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="16.0"/>
+                    </VBox.margin>
+                </HBox>
+                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="80.0" prefWidth="556.0">
+                    <children>
+                        <Label fx:id="livingRoom_label" alignment="CENTER_RIGHT" maxHeight="-Infinity"
+                               maxWidth="-Infinity"
+                               minHeight="-Infinity"
+                               minWidth="-Infinity" prefHeight="80.0" prefWidth="192.0" text="Label"
+                               textFill="#0000008a">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <JFXSlider fx:id="livingRoom_slider" blockIncrement="1.0" majorTickUnit="1.0" max="5.0"
+                                   maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                   minorTickCount="0" prefHeight="120.0" prefWidth="350.0" showTickLabels="true"
+                                   showTickMarks="true" snapToTicks="true" stylesheets="@../css/slider.css" value="1.0">
+                            <HBox.margin>
+                                <Insets left="16.0"/>
+                            </HBox.margin>
+                        </JFXSlider>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="16.0"/>
+                    </VBox.margin>
+                </HBox>
+            </children>
+            <StackPane.margin>
+                <Insets bottom="16.0" right="68.0" top="44.0"/>
+            </StackPane.margin>
+        </VBox>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0"
+              prefWidth="1040.0" StackPane.alignment="BOTTOM_CENTER">
+            <StackPane.margin>
+                <Insets/>
+            </StackPane.margin>
+            <children>
+                <JFXTextField fx:id="keyword" focusColor="#ff4081" labelFloat="true" maxHeight="-Infinity"
+                              maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0"
+                              prefWidth="920.0">
+                    <VBox.margin>
+                        <Insets left="60.0" top="32.0"/>
+                    </VBox.margin>
+                </JFXTextField>
+                <JFXButton fx:id="search" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                           minWidth="-Infinity" mnemonicParsing="false" prefHeight="55.0" prefWidth="900.0"
+                           ripplerFill="#0000008a" style="-fx-background-color: #2298f28a;" text="Button"
+                           textFill="#ffffffde">
+                    <font>
+                        <Font name="System Bold" size="15.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets left="70.0" top="32.0"/>
+                    </VBox.margin>
+                </JFXButton>
+            </children>
+        </VBox>
+    </children>
+</StackPane>

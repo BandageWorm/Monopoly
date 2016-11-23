@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.5" prefWidth="1176.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.5" prefWidth="1176.0" StackPane.alignment="BOTTOM_CENTER">
+            <content>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1176.0" />
+            </content>
+        </ScrollPane>
+        <HBox maxHeight="80.0" minHeight="80.0" style="-fx-background-color: #2196F3;" StackPane.alignment="TOP_CENTER">
+            <effect>
+                <DropShadow blurType="GAUSSIAN" />
+            </effect>
+            <children>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="80.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/close.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+                <Label fx:id="title" maxHeight="80.0" minHeight="80.0" text="Test" textFill="#ffffffde">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="8.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</StackPane>

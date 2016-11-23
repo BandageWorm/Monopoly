@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1040.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="source.SettingController">
+    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="640.0">
+        <VBox.margin>
+            <Insets left="180.0" right="40.0" top="32.0" />
+        </VBox.margin>
+        <children>
+            <Label fx:id="language_label" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="120.0" text="Label" textFill="#0000008a" StackPane.alignment="TOP_LEFT">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Label>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="504.0" StackPane.alignment="TOP_RIGHT">
+                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                    <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                            <Pane fx:id="china_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="4.0" style="-fx-background-color: #0000008a;">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </Pane>
+                            <ImageView fitHeight="26.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets left="20.0" right="16.0" top="12.0" />
+                                </HBox.margin>
+                                <image>
+                                    <Image url="@../image/China.jpg" />
+                                </image>
+                                <effect>
+                                    <DropShadow color="#0000005e" />
+                                </effect>
+                            </ImageView>
+                            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" text="简体中文">
+                                <HBox.margin>
+                                    <Insets left="16.0" />
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="488.0" style="-fx-background-color: #0000001f;" StackPane.alignment="BOTTOM_CENTER" />
+                        <JFXButton fx:id="china_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="504.0" textFill="TRANSPARENT" />
+                    </children>
+                </StackPane>
+
+                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                    <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                            <Pane fx:id="hk_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="4.0" style="-fx-background-color: #0000008a;">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </Pane>
+                            <ImageView fitHeight="26.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets left="20.0" right="16.0" top="12.0" />
+                                </HBox.margin>
+                                <image>
+                                    <Image url="@../image/HK.jpg" />
+                                </image>
+                                <effect>
+                                    <DropShadow color="#0000005e" />
+                                </effect>
+                            </ImageView>
+                            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" text="繁體中文">
+                                <HBox.margin>
+                                    <Insets left="16.0" />
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="488.0" style="-fx-background-color: #0000001f;" StackPane.alignment="BOTTOM_CENTER" />
+                        <JFXButton fx:id="hk_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="504.0" textFill="TRANSPARENT" />
+                    </children>
+                </StackPane>
+
+                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                    <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                            <Pane fx:id="english_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="4.0" style="-fx-background-color: #0000008a;">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </Pane>
+                            <ImageView fitHeight="26.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets left="20.0" right="16.0" top="12.0" />
+                                </HBox.margin>
+                                <image>
+                                    <Image url="@../image/US.jpg" />
+                                </image>
+                                <effect>
+                                    <DropShadow color="#0000005e" />
+                                </effect>
+                            </ImageView>
+                            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" text="English">
+                                <HBox.margin>
+                                    <Insets left="16.0" />
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="488.0" style="-fx-background-color: #0000001f;" StackPane.alignment="BOTTOM_CENTER" />
+                        <JFXButton fx:id="english_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="504.0" textFill="TRANSPARENT" />
+                    </children>
+                </StackPane>
+
+                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                    <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                            <Pane fx:id="korea_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="4.0" style="-fx-background-color: #0000008a;">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </Pane>
+                            <ImageView fitHeight="26.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets left="20.0" right="16.0" top="12.0" />
+                                </HBox.margin>
+                                <image>
+                                    <Image url="@../image/Korea.jpg" />
+                                </image>
+                                <effect>
+                                    <DropShadow color="#0000005e" />
+                                </effect>
+                            </ImageView>
+                            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" text="한국어">
+                                <HBox.margin>
+                                    <Insets left="16.0" />
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="488.0" style="-fx-background-color: #0000001f;" StackPane.alignment="BOTTOM_CENTER" />
+                        <JFXButton fx:id="korea_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="504.0" textFill="TRANSPARENT" />
+                    </children>
+                </StackPane>
+
+                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                    <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                            <Pane fx:id="jp_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="4.0" style="-fx-background-color: #0000008a;">
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                            </Pane>
+                            <ImageView fitHeight="26.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets left="20.0" right="16.0" top="12.0" />
+                                </HBox.margin>
+                                <image>
+                                    <Image url="@../image/JP.png" />
+                                </image>
+                                <effect>
+                                    <DropShadow color="#0000005e" />
+                                </effect>
+                            </ImageView>
+                            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" text="日本語">
+                                <HBox.margin>
+                                    <Insets left="16.0" />
+                                </HBox.margin>
+                            </Label>
+                        </HBox>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="488.0" style="-fx-background-color: #0000001f;" StackPane.alignment="BOTTOM_CENTER" />
+                        <JFXButton fx:id="jp_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="504.0" textFill="TRANSPARENT" />
+                    </children>
+                </StackPane>
+            </VBox>
+        </children>
+    </StackPane>
+    <StackPane layoutX="50.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="640.0">
+        <children>
+            <Label fx:id="unit_label" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="120.0" text="Label" textFill="#0000008a" StackPane.alignment="TOP_LEFT">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Label>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0" StackPane.alignment="CENTER_RIGHT">
+                <children>
+                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="504.0">
+                        <children>
+                            <JFXRadioButton fx:id="meter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" style="-fx-selected-color: #ff4081;" text="RadioButton">
+                                <HBox.margin>
+                                    <Insets left="16.0" />
+                                </HBox.margin>
+                            </JFXRadioButton>
+                            <JFXRadioButton fx:id="foot" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" style="-fx-selected-color: #ff4081;" text="RadioButton">
+                                <HBox.margin>
+                                    <Insets left="16.0" />
+                                </HBox.margin>
+                            </JFXRadioButton>
+                        </children>
+                    </HBox>
+                    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="488.0" style="-fx-background-color: #0000001f;" StackPane.alignment="BOTTOM_CENTER" />
+                </children>
+            </StackPane>
+        </children>
+        <VBox.margin>
+            <Insets left="180.0" right="40.0" top="16.0" />
+        </VBox.margin>
+    </StackPane>
+</VBox>

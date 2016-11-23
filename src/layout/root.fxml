@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.76-ea"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="source.Controller">
+    <children>
+        <StackPane maxHeight="640.0" minHeight="640.0" StackPane.alignment="BOTTOM_CENTER">
+            <children>
+                <StackPane fx:id="container" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                           minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1040.0"
+                           StackPane.alignment="BOTTOM_RIGHT">
+                    <StackPane.margin>
+                        <Insets bottom="40.0"/>
+                    </StackPane.margin>
+                </StackPane>
+                <StackPane alignment="TOP_CENTER" layoutX="250.0" layoutY="10.0" maxHeight="-Infinity"
+                           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0"
+                           prefWidth="1040.0" style="-fx-background-color: #ffffff;" StackPane.alignment="BOTTOM_RIGHT">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#00000050"/>
+                    </effect>
+                    <children>
+                        <Label fx:id="currencyRate" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                               minWidth="-Infinity" prefHeight="40.0" text="Label" StackPane.alignment="CENTER_LEFT">
+                            <StackPane.margin>
+                                <Insets left="48.0"/>
+                            </StackPane.margin>
+                        </Label>
+                        <Circle fill="#ffeb3b" radius="8.0" stroke="TRANSPARENT" strokeType="INSIDE"
+                                StackPane.alignment="CENTER_LEFT">
+                            <StackPane.margin>
+                                <Insets left="16.0"/>
+                            </StackPane.margin>
+                        </Circle>
+                    </children>
+                </StackPane>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      prefHeight="640.0" prefWidth="240.0" style="-fx-background-color: #ffffff;"
+                      StackPane.alignment="BOTTOM_LEFT">
+                    <effect>
+                        <DropShadow color="#00000061"/>
+                    </effect>
+                    <children>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                   prefHeight="80.0" prefWidth="240.0">
+                            <children>
+                                <Pane fx:id="buy_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="80.0" prefWidth="8.0"
+                                      style="-fx-background-color: #2196F3;" StackPane.alignment="BOTTOM_LEFT"/>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true"
+                                           StackPane.alignment="CENTER_LEFT">
+                                    <image>
+                                        <Image url="@../image/buy.png"/>
+                                    </image>
+                                    <StackPane.margin>
+                                        <Insets bottom="25.0" left="20.0" right="20.0" top="25.0"/>
+                                    </StackPane.margin>
+                                </ImageView>
+                                <Label fx:id="buy_label" maxHeight="-Infinity" maxWidth="-Infinity"
+                                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" text="Label"
+                                       textFill="#0000008a" StackPane.alignment="CENTER_LEFT">
+                                    <font>
+                                        <Font name="System Bold" size="16.0"/>
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets left="86.0"/>
+                                    </StackPane.margin>
+                                </Label>
+                                <JFXButton fx:id="buy_button" maxHeight="-Infinity" maxWidth="-Infinity"
+                                           minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                           prefHeight="80.0" prefWidth="240.0" ripplerFill="#000000a5"
+                                           textFill="TRANSPARENT"/>
+                            </children>
+                        </StackPane>
+
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                   prefHeight="80.0" prefWidth="240.0">
+                            <children>
+                                <Pane fx:id="rent_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                      minWidth="-Infinity" prefHeight="80.0" prefWidth="8.0"
+                                      style="-fx-background-color: #2196F3;" StackPane.alignment="BOTTOM_LEFT"/>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true"
+                                           StackPane.alignment="CENTER_LEFT">
+                                    <image>
+                                        <Image url="@../image/rent.png"/>
+                                    </image>
+                                    <StackPane.margin>
+                                        <Insets bottom="25.0" left="20.0" right="20.0" top="25.0"/>
+                                    </StackPane.margin>
+                                </ImageView>
+                                <Label fx:id="rent_label" maxHeight="-Infinity" maxWidth="-Infinity"
+                                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" text="Label"
+                                       textFill="#0000008a" StackPane.alignment="CENTER_LEFT">
+                                    <font>
+                                        <Font name="System Bold" size="16.0"/>
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets left="86.0"/>
+                                    </StackPane.margin>
+                                </Label>
+                                <JFXButton fx:id="rent_button" maxHeight="-Infinity" maxWidth="-Infinity"
+                                           minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                           prefHeight="80.0" prefWidth="240.0" ripplerFill="#000000a5"
+                                           textFill="TRANSPARENT"/>
+                            </children>
+                        </StackPane>
+
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                   prefHeight="80.0" prefWidth="240.0">
+                            <children>
+                                <Pane fx:id="setting_pane" maxHeight="-Infinity" maxWidth="-Infinity"
+                                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="8.0"
+                                      style="-fx-background-color: #2196F3;" StackPane.alignment="BOTTOM_LEFT"/>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true"
+                                           StackPane.alignment="CENTER_LEFT">
+                                    <image>
+                                        <Image url="@../image/setting.png"/>
+                                    </image>
+                                    <StackPane.margin>
+                                        <Insets bottom="25.0" left="20.0" right="20.0" top="25.0"/>
+                                    </StackPane.margin>
+                                </ImageView>
+                                <Label fx:id="setting_label" maxHeight="-Infinity" maxWidth="-Infinity"
+                                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" text="Label"
+                                       textFill="#0000008a" StackPane.alignment="CENTER_LEFT">
+                                    <font>
+                                        <Font name="System Bold" size="16.0"/>
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets left="86.0"/>
+                                    </StackPane.margin>
+                                </Label>
+                                <JFXButton fx:id="setting_button" maxHeight="-Infinity" maxWidth="-Infinity"
+                                           minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                           prefHeight="80.0" prefWidth="240.0" ripplerFill="#000000a5"
+                                           textFill="TRANSPARENT"/>
+                            </children>
+                        </StackPane>
+
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                   prefHeight="80.0" prefWidth="240.0">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true"
+                                           StackPane.alignment="CENTER_LEFT">
+                                    <image>
+                                        <Image url="@../image/exit.png"/>
+                                    </image>
+                                    <StackPane.margin>
+                                        <Insets bottom="25.0" left="20.0" right="20.0" top="25.0"/>
+                                    </StackPane.margin>
+                                </ImageView>
+                                <Label fx:id="exit_label" maxHeight="-Infinity" maxWidth="-Infinity"
+                                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" text="Label"
+                                       textFill="#0000008a" StackPane.alignment="CENTER_LEFT">
+                                    <font>
+                                        <Font name="System Bold" size="16.0"/>
+                                    </font>
+                                    <StackPane.margin>
+                                        <Insets left="86.0"/>
+                                    </StackPane.margin>
+                                </Label>
+                                <JFXButton fx:id="exit_button" maxHeight="-Infinity" maxWidth="-Infinity"
+                                           minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                           prefHeight="80.0" prefWidth="240.0" ripplerFill="#000000a5"
+                                           textFill="TRANSPARENT"/>
+                            </children>
+                        </StackPane>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+        <HBox maxHeight="80.0" minHeight="80.0" style="-fx-background-color: #2196F3;">
+            <effect>
+                <DropShadow blurType="GAUSSIAN"/>
+            </effect>
+            <children>
+                <Label fx:id="title" maxHeight="80.0" minHeight="80.0" textFill="#ffffffde">
+                    <font>
+                        <Font name="System Bold" size="24.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets left="48.0"/>
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</StackPane>
